@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Android Labs</string>
+    <string name="app_name">ஆண்ட்ராய்டு ஆய்வகங்கள்</string>
     <string name="hello_message">வணக்கம்டா மாப்ள!!</string>
-    <string name="ButtonText"> I\'m a button</string>
+    <string name="ButtonText"> நான் ஒரு பொத்தான் </string>
 </resources>
