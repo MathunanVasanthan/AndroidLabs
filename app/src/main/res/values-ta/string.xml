@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ஆண்ட்ராய்டு ஆய்வகங்கள்</string>
-    <string name="hello_message">வணக்கம்டா மாப்ள!!</string>
-    <string name="ButtonText"> நான் ஒரு பொத்தான் </string>
+    <string name="app_name">ஆய்வகங்கள் 02</string>
+    <string name="hello_message">ஆய்வகம்2 ஜி.யு.ஐ</string>
+    <string name="ButtonText"> இங்கே கிளிக் செய்யவும் </string>
+    <string name="CheckboxText">இதை முயற்சிக்கவும்</string>
+    <string name="SwitchText">சொடுக்கி ஆன்/ஆஃப்</string>
+    <string name="EditTextName">பெயரை இங்கே உள்ளிடவும் </string>
+    <string name="toast_message">இதோ மேலும் தகவல்</string>
+    <string name="on">இப்போது சுவிட்ச் ஆன்</string>
+    <string name="off">இப்போது சுவிட்ச் ஆஃப்</string>
+    <string name="undo">செயல்தவிர்</string>
 </resources>
