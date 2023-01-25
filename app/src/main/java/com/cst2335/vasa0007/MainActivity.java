@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_linear);
+        setContentView(R.layout.activity_main_constraint);
 
         Switch swt = findViewById(R.id.switch1);
         swt.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
