@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //Content View for LinearLayout
-        setContentView(R.layout.activity_main_linear);
+//        setContentView(R.layout.activity_main_linear);
         //Content view for constraintLayout
-        //setContentView(R.layout.activity_main_constraint);
+        setContentView(R.layout.activity_main_constraint);
 
         Switch swt = findViewById(R.id.switch1);
         Button btn = findViewById(R.id.button);
