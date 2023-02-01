@@ -3,6 +3,7 @@ package com.cst2335.vasa0007;
 import static android.text.InputType.TYPE_TEXT_FLAG_CAP_WORDS;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -18,76 +19,32 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import java.text.BreakIterator;
+
 
 public class MainActivity extends AppCompatActivity {
 
 
     @SuppressLint("WrongViewCast")
 
+//    private EditText emailEditText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Content View for LinearLayout
-//        setContentView(R.layout.activity_main_linear);
-        //Content view for constraintLayout
-        setContentView(R.layout.activity_main_constraint);
+        setContentView(R.layout.activity_main_lab_03);
 
-        Switch swt = findViewById(R.id.switch1);
-        Button btn = findViewById(R.id.button);
+        EditText emailEditText = findViewById(R.id.email);
+        Button loginButton = findViewById(R.id.button3);
 
-
-
-
-        //Add a check listener for switch
-        swt.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCheckedChanged(CompoundButton cb, boolean b) {
-                if (cb.isChecked()) {
-                    Snackbar snackbar1 = Snackbar.make(swt, getResources().getString(R.string.on), Snackbar.LENGTH_LONG).setAction(getResources().getString(R.string.undo), click ->
-                            cb.setChecked(!b));
-                    snackbar1.show();
-                } else {
-                    Snackbar snackbar2 = Snackbar.make(swt, getResources().getString(R.string.off), Snackbar.LENGTH_LONG).setAction(getResources().getString(R.string.undo), click ->
-                            cb.setChecked(!b));
-                    snackbar2.show();
-                }
+            public void onClick(View v) {
+                String email = emailEditText.getText().toString();
+                Intent goToProfile = new Intent(MainActivity.this, ProfileActivity.class);
+                goToProfile.putExtra("EMAIL", email);
+                startActivity(goToProfile);
             }
         });
-
-        //Add OnClickListener
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), getResources().getString(R.string.toast_message), Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // Code for make first letter of the name capital
-        EditText edtxt = findViewById(R.id.edit_text);
-        edtxt.setInputType(TYPE_TEXT_FLAG_CAP_WORDS);
-
-//        edtxt.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//
-//            }
-//
-//            @Override
-//            public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
-//                String text = charSequence.toString();
-//                if (start == 0 && !text.isEmpty()) {
-//                    char first = text.charAt(0);
-//                    text = Character.toUpperCase(first) + text.substring(1);
-//                    edtxt.setText(text);
-//                    edtxt.setSelection(1);
-//                }
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable editable) {
-//
-//            }
-//        });
     }
-
 }

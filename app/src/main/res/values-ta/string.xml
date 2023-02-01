@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ஆய்வகங்கள் 02</string>
-    <string name="hello_message">ஆய்வகம்2 ஜி.யு.ஐ</string>
-    <string name="ButtonText"> இங்கே கிளிக் செய்யவும் </string>
+    <string name="app_name">ஆண்ட்ராய்டு ஆய்வகங்கள்</string>
+    <string name="hello_message">முக்கியமான செயல்பாடு</string>
+    <string name="profilename">சுயவிவர செயல்பாடு</string>
+    <string name="ButtonText"> உள்நுழைய </string>
+    <string name="probutton">படம் எடு</string>
     <string name="CheckboxText">இதை முயற்சிக்கவும்</string>
     <string name="SwitchText">சொடுக்கி ஆன்/ஆஃப்</string>
     <string name="EditTextName">பெயரை இங்கே உள்ளிடவும் </string>
@@ -10,4 +12,6 @@
     <string name="on">இப்போது சுவிட்ச் ஆன்</string>
     <string name="off">இப்போது சுவிட்ச் ஆஃப்</string>
     <string name="undo">செயல்தவிர்</string>
+    <string name="email">மின்னஞ்சலை பதிவுசெய்</string>
+    <string name="password">உங்கள் கடவுச்சொல்லை உள்ளிடவும்</string>
 </resources>
