@@ -17,19 +17,22 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ProfileActivity extends AppCompatActivity {
-    private static final String MES = "ProfileActivity";
-//    private ImageView imgView;
-//    private EditText emailEditText;
+
+    private static final String TAG = "PROFILE_ACTIVITY";
+    private ImageView imgView;
     private ActivityResultLauncher<Intent> myPictureTakerLauncher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
+        Log.e(TAG, "In function: onCreate");
+        imgView = findViewById(R.id.img_view);
         Button takePictureButton = findViewById(R.id.button3);
+        EditText name = findViewById(R.id.name);
 
-        takePictureButton.setOnClickListener(v -> dispatchTakePictureIntent());
+            takePictureButton.setOnClickListener(v -> dispatchTakePictureIntent());
+
 
         myPictureTakerLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
@@ -43,11 +46,50 @@ public class ProfileActivity extends AppCompatActivity {
                             Bitmap imgBitmap = (Bitmap) data.getExtras().get("data");
                             imgView.setImageBitmap(imgBitmap);
                         } else if (result.getResultCode() == Activity.RESULT_CANCELED) {
-                            Log.i(MES, "User refused to capture a picture.");
+                            Log.i(TAG, "User refused to capture a picture.");
                         }
                     }
                 }
         );
+
+        Intent fromMain = getIntent();
+        String email = fromMain.getStringExtra("EMAIL");
+        EditText emailEditText = findViewById(R.id.editText2);
+        emailEditText.setText(email);
+
+        name.setText("Mathunan");
+
+
+     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.e(TAG, "In function: onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.e(TAG, "In function: onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.e(TAG, "In function: onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.e(TAG, "In function: onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.e(TAG, "In function: onDestroy");
     }
 
     private void dispatchTakePictureIntent() {
@@ -56,55 +98,8 @@ public class ProfileActivity extends AppCompatActivity {
             myPictureTakerLauncher.launch(takePictureIntent);
         }
 
-
-        setContentView(R.layout.activity_profile);
-        EditText emailEditText = findViewById(R.id.emailp);
-
-        Intent fromMain = getIntent();
-        String email = fromMain.getStringExtra(String.valueOf(R.id.email));
-        emailEditText.setText(email);
-    }
-
-        @Override
-        protected void onStart() {
-            super.onStart();
-            Log.e(MES, "onStart method");
-            // rest of the code
         }
 
-        @Override
-        protected void onResume() {
-            super.onResume();
-            Log.e(MES, "onResume method");
-            // rest of the code
-        }
 
-        @Override
-        protected void onPause() {
-            super.onPause();
-            Log.e(MES, "onPause method");
-            // rest of the code
-        }
-
-        @Override
-        protected void onStop() {
-            super.onStop();
-            Log.e(MES, "onStop method");
-            // rest of the code
-        }
-
-        @Override
-        protected void onDestroy() {
-            super.onDestroy();
-            Log.e(MES, "onDestroy method");
-            // rest of the code
-        }
-
-        @Override
-        protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-            super.onActivityResult(requestCode, resultCode, data);
-            Log.e(MES, "onActivityResult method");
-            // rest of the code
-        }
 
 }

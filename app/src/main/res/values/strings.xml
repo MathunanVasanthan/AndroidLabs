@@ -11,6 +11,7 @@
     <string name="toast_message">Here is more information</string>
     <string name="on">The switch in now on</string>
     <string name="off">The switch in now off</string>
+    <string name="usname">Enter your name</string>
     <string name="undo">Undo</string>
     <string name="email">Enter your email</string>
     <string name="password">Enter your password</string>

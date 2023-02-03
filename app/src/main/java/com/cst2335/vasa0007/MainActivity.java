@@ -34,15 +34,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_lab_03);
 
-        EditText emailEditText = findViewById(R.id.email);
         Button loginButton = findViewById(R.id.button3);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = emailEditText.getText().toString();
+                EditText emailEditText = findViewById(R.id.email);
+
                 Intent goToProfile = new Intent(MainActivity.this, ProfileActivity.class);
-                goToProfile.putExtra("EMAIL", email);
+                goToProfile.putExtra("EMAIL", emailEditText.getText().toString());
                 startActivity(goToProfile);
             }
         });

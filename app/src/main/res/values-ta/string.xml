@@ -11,6 +11,7 @@
     <string name="toast_message">இதோ மேலும் தகவல்</string>
     <string name="on">இப்போது சுவிட்ச் ஆன்</string>
     <string name="off">இப்போது சுவிட்ச் ஆஃப்</string>
+    <string name="usname">உங்கள் பெயரை உள்ளிடவும்</string>
     <string name="undo">செயல்தவிர்</string>
     <string name="email">மின்னஞ்சலை பதிவுசெய்</string>
     <string name="password">உங்கள் கடவுச்சொல்லை உள்ளிடவும்</string>
