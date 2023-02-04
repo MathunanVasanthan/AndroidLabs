@@ -10,14 +10,15 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="@string/profilename"
         android:textAlignment="center"
         android:textColor="#588157"
         android:textSize="40sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
 
     <EditText
         android:id="@+id/name"
