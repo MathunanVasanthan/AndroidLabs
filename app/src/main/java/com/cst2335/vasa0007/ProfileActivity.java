@@ -9,6 +9,7 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -54,8 +55,11 @@ public class ProfileActivity extends AppCompatActivity {
 
         Intent fromMain = getIntent();
         String email = fromMain.getStringExtra("EMAIL");
-        EditText emailEditText = findViewById(R.id.editText2);
-        emailEditText.setText(email);
+        TextView emailText = findViewById(R.id.textViewemail);
+        emailText.setText(email);
+
+//        EditText emailEditText = findViewById(R.id.editText2);
+//        emailEditText.setText(email);
 
         name.setText("Mathunan");
 

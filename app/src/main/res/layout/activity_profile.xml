@@ -24,45 +24,48 @@
         android:id="@+id/name"
         android:layout_width="221dp"
         android:layout_height="wrap_content"
-        android:hint="@string/usname"
         android:autofillHints="username"
+        android:hint="@string/usname"
         android:minHeight="48dp"
         android:textAlignment="center"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/editText2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.629" />
+        app:layout_constraintVertical_bias="0.906" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="219dp"
         android:layout_height="wrap_content"
-        android:hint="@string/email"
         android:autofillHints="emailAddress"
+        android:hint="@string/address"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:textAlignment="center"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintVertical_bias="0.464" />
+
+
 
     <ImageView
         android:id="@+id/img_view"
         android:layout_width="106dp"
         android:layout_height="122dp"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="508dp"
+        android:contentDescription="@string/profilename"
         android:maxWidth="120dp"
         android:maxHeight="120dp"
-        android:contentDescription="@string/profilename"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -75,7 +78,30 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintVertical_bias="0.713" />
+        app:layout_constraintVertical_bias="0.43" />
+
+    <TextView
+        android:id="@+id/textViewemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.248" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
