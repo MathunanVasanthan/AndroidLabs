@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="0.075" />
 
     <EditText
         android:id="@+id/name"
@@ -51,22 +51,24 @@
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.464" />
-
+        app:layout_constraintVertical_bias="0.464"
+        />
 
 
     <ImageView
         android:id="@+id/img_view"
-        android:layout_width="106dp"
-        android:layout_height="122dp"
-        android:layout_marginBottom="508dp"
+        android:layout_width="138dp"
+        android:layout_height="93dp"
         android:contentDescription="@string/profilename"
         android:maxWidth="120dp"
         android:maxHeight="120dp"
+        android:src="@drawable/mine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
 
     <Button
         android:id="@+id/button3"

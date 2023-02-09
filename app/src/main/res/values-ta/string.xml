@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">ஆண்ட்ராய்டு ஆய்வகங்கள் ஆய்வகங்கள்4</string>
     <string name="hello_message">முக்கியமான செயல்பாடு</string>
-    <string name="profilename">சுயவிவர செயல்பாடு</string>
+    <string name="profilename">சுயவிவரசெயல்பாடு</string>
     <string name="ButtonText"> உள்நுழைய </string>
     <string name="probutton">தரவை சேமிக்கவும்</string>
     <string name="clear">தரவை அழிக்கவும்</string>
