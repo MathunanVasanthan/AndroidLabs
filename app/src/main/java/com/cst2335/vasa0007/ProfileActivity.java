@@ -80,7 +80,7 @@ public class ProfileActivity extends AppCompatActivity {
                 name=" ";
                 address=" ";
 
-                name_edit.setText(" ");
+                name_edit.setText("");
                 address_edit.setText("");
             }
         });
