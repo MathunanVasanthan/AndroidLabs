@@ -1,5 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Android Labs</string>
-    <string name="hello_message">Hello World!</string>
-    <string name="ButtonText">I\'m a button</string>
+    <string name="app_name">Android Labs lab 05 </string>
+    <string name="hello_message">Main Activity</string>
+    <string name="profilename">Profile Activity</string>
+    <string name="ButtonText">Log in</string>
+    <string name="probutton">Save Data</string>
+    <string name="clear">Clear Data</string>
+    <string name="CheckboxText">check this out</string>
+    <string name="SwitchText">Switch on/off</string>
+    <string name="EditTextName"> Enter name here </string>
+    <string name="toast_message">Here is more information</string>
+    <string name="on">The switch in now on</string>
+    <string name="off">The switch in now off</string>
+    <string name="usname">Enter your name</string>
+    <string name="undo">Undo</string>
+    <string name="email">Enter your email</string>
+    <string name="password">Type your password</string>
+    <string name="address">Enater your address</string>
+    <string name="tv1">Your password meets the requirements!</string>
+    <string name="tv2">You shall not pass!</string>
+    <string name="text1">Your password should have a length between 4 and 20 inclusive</string>4
+    <string name="text2">Your password does not have an upper case letter</string>
+    <string name="text3">Your password does not have a lower case letter</string>
+    <string name="text4">Your password does not have a number</string>
+    <string name="text5">Your password does not have a special symbol (#$%^*!@?)</string>
 </resources>
