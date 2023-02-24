@@ -52,12 +52,8 @@ public class ProfileActivity extends AppCompatActivity {
         savedata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = name_edit.getText().toString();
-                String address = address_edit.getText().toString();
+                save_data();
 
-                editor.putString(USER_NAME,name);
-                editor.putString(USER_ADDRESS,address);
-                editor.apply();
             }
         });
 
@@ -70,18 +66,7 @@ public class ProfileActivity extends AppCompatActivity {
         cleardata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = name_edit.getText().toString();
-                String address = address_edit.getText().toString();
-
-                editor.remove(USER_NAME);
-                editor.remove(USER_ADDRESS);
-                editor.commit();
-
-                name=" ";
-                address=" ";
-
-                name_edit.setText("");
-                address_edit.setText("");
+                clear_data();
             }
         });
 
@@ -92,32 +77,73 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        //save_data();
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+       // save_data();
 
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        //save_data();
 
     }
 
     @Override
     protected void onStop() {
         super.onStop();
+        //save_data();
 
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        //clear_data();
     }
 
+    public void save_data(){
+
+        SharedPreferences sharedPreferences = getSharedPreferences(ANDROID_LAB4,MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        EditText name_edit = findViewById(R.id.name);
+        EditText address_edit = findViewById(R.id.editText2);
+
+        String name = name_edit.getText().toString();
+        String address = address_edit.getText().toString();
+
+        editor.putString(USER_NAME,name);
+        editor.putString(USER_ADDRESS,address);
+        editor.apply();
+
+    }
+
+    public void clear_data(){
+        SharedPreferences sharedPreferences = getSharedPreferences(ANDROID_LAB4,MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        EditText name_edit = findViewById(R.id.name);
+        EditText address_edit = findViewById(R.id.editText2);
+
+        String name = name_edit.getText().toString();
+        String address = address_edit.getText().toString();
+
+        editor.remove(USER_NAME);
+        editor.remove(USER_ADDRESS);
+        editor.commit();
+
+//                name=" ";
+//                address=" ";
+
+        name_edit.setText("");
+        address_edit.setText("");
+
+    }
 
 
 

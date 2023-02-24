@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ஆண்ட்ராய்டு ஆய்வகங்கள் ஆய்வகங்கள்4</string>
+    <string name="app_name">ஆண்ட்ராய்டு ஆய்வகங்கள் ஆய்வகங்கள் 5</string>
     <string name="hello_message">முக்கியமான செயல்பாடு</string>
     <string name="profilename">சுயவிவரசெயல்பாடு</string>
     <string name="ButtonText"> உள்நுழைய </string>
@@ -17,4 +17,11 @@
     <string name="email">மின்னஞ்சலை பதிவுசெய்</string>
     <string name="password">உங்கள் கடவுச்சொல்லை உள்ளிடவும்</string>
     <string name="address">உங்கள் முகவரியை உள்ளிடவும்</string>
+    <string name="tv1">உங்கள் கடவுச்சொல் தேவைகளைப் பூர்த்தி செய்கிறது!</string>
+    <string name="tv2">நீங்கள் கடக்க முடியாது!</string>
+    <string name="text1">உங்கள் கடவுச்சொல்லின் நீளம் 4 முதல் 20 வரை இருக்க வேண்டும்</string>
+    <string name="text2">உங்கள் கடவுச்சொல்லில் பெரிய எழுத்து இல்லை</string>
+    <string name="text3">உங்கள் கடவுச்சொல்லில் சிறிய எழுத்து இல்லை</string>
+    <string name="text4">உங்கள் கடவுச்சொல்லில் எண் இல்லை</string>
+    <string name="text5">உங்கள் கடவுச்சொல்லில் சிறப்பு சின்னம் இல்லை (#$%^*!@?)</string>
 </resources>
