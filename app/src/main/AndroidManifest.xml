@@ -17,34 +17,12 @@
         android:theme="@style/Theme.AndroidLabs"
         tools:targetApi="31">
         <activity
-            android:name=".ChatRoom"
+            android:name="com.cst2335.vasa0007.ChatRoom"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.example.app.PROFILE_ACTIVITY" />
-
-                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

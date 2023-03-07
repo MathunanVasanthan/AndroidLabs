@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Android Labs lab 05 </string>
-    <string name="hello_message">Main Activity</string>
-    <string name="profilename">Profile Activity</string>
-    <string name="ButtonText">Log in</string>
+    <string name="app_name">Android Labs lab 06 </string>
+    <string name="time_text">Time goes here</string>
+    <string name="message_text">Message goes here</string>
+    <string name="send">Send</string>
     <string name="probutton">Save Data</string>
     <string name="clear">Clear Data</string>
     <string name="CheckboxText">check this out</string>

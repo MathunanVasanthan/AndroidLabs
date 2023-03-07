@@ -10,6 +10,10 @@ android {
         enabled = true;
     }
 
+    buildFeatures{
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "algonquin.cst2335.lee00824"
         minSdk 22
@@ -19,6 +23,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
 
     buildTypes {
         release {
