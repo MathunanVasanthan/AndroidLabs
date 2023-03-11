@@ -1,5 +1,4 @@
-package com.cst2335.vasa0007;
-
+package algonquin.cst2335.vasa0007;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,11 +7,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -20,8 +17,9 @@ import java.util.Date;
 
 import algonquin.cst2335.vasa0007.R;
 import algonquin.cst2335.vasa0007.databinding.ActivityChatRoomBinding;
-import algonquin.cst2335.vasa0007.databinding.ReciveMessageBinding;
+import algonquin.cst2335.vasa0007.databinding.ReceiveMessageBinding;
 import  algonquin.cst2335.vasa0007.databinding.SentMessageBinding;
+
 
 public class ChatRoom extends AppCompatActivity {
 
@@ -79,16 +77,13 @@ public class ChatRoom extends AppCompatActivity {
             @Override
             public MyRowHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                 if (viewType == 0) {
-
                     SentMessageBinding binding = SentMessageBinding.inflate(getLayoutInflater());
                     return new MyRowHolder(binding.getRoot());
                 } else {
-                    ReciveMessageBinding binding = ReciveMessageBinding.inflate(getLayoutInflater());
+                    ReceiveMessageBinding binding = ReceiveMessageBinding.inflate(getLayoutInflater());
                     return new MyRowHolder(binding.getRoot());
                 }
             }
-
-
 
             @Override
             public void onBindViewHolder(@NonNull MyRowHolder holder, int position) {
@@ -103,7 +98,7 @@ public class ChatRoom extends AppCompatActivity {
             }
 
             public int getItemViewType(int position){
-                    ChatMessage chatMessage = messages.get(position);
+                ChatMessage chatMessage = messages.get(position);
                 if (chatMessage.isSentButton()) {
                     return 0;
                 } else {
