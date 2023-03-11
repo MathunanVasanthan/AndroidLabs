@@ -12,8 +12,8 @@ public class ChatMessage extends ViewModel {
 
         public MutableLiveData<ArrayList<ChatMessage>> messages = new MutableLiveData<ArrayList<ChatMessage>>();
 
-        public ChatMessage() {
-        }
+            public ChatMessage() {
+            }
 
         public ChatMessage(String m, String t, boolean sent) {
             message = m;

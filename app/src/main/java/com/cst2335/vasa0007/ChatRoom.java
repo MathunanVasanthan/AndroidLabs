@@ -103,7 +103,7 @@ public class ChatRoom extends AppCompatActivity {
             }
 
             public int getItemViewType(int position){
-                ChatMessage chatMessage = messages.get(position);
+                    ChatMessage chatMessage = messages.get(position);
                 if (chatMessage.isSentButton()) {
                     return 0;
                 } else {
